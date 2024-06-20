@@ -30,11 +30,84 @@ if (ismarried){
 //  end if solution
 
 // for loop concept
-const ans = 0
+let ans = 0
 for (let i = 0; i < 10; i++) {
-    console.log(i)
+    console.log("value of i os "+i)
     ans = ans + i
+    console.log ("new value of ans is "+ans)
 
 }
 
 console.log(ans)
+
+// learning the concept of arrays 
+
+const arr = ["numaan", "raman", "shubham"]
+console.log(arr[0])
+
+function printMax(arr) {
+    let max = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return max
+}
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let maximum = printMax(arr1)
+console.log(maximum)
+
+
+// complex objects 
+const person = [{
+    name: "numaan",
+    age: 20,
+    ismarried: true,
+    hobbies: ["coding", "gaming", "reading"],
+    address: {
+        street: "123 main street",
+        city: "delhi",
+        state: "delhi"
+    }
+},
+{
+    name: "raman",
+    age: 21,
+    ismarried: false,
+    hobbies: ["coding", "gaming", "reading"],
+    address: {
+        street: "123 main street",
+        city: "delhi",
+        state: "delhi"
+    }
+},
+{
+    name: "shubham",
+    age: 22,
+    ismarried: true,
+    gender : "female",
+    hobbies: ["coding", "gaming", "reading"],
+    address: {
+        street: "123 main street",
+        city: "delhi",
+        state: "delhi"
+    }
+}
+]
+
+for (let i = 0; i < person.length; i++) {
+    if (person[i]["gender"]=="female") {
+        console.log(person[i].name + " is married")
+    }
+}
+
+// functions in javascript
+
+function add(a, b) {
+    return a + b
+
+}
+
+const value = add(2, 3)
+console.log(value)
