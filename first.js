@@ -111,3 +111,39 @@ function add(a, b) {
 
 const value = add(2, 3)
 console.log(value)
+
+
+// callbacks 
+
+function sum(num1,num2, displayresult)
+{    let result = num1 + num2
+    return displayresult(result,displayresultPassive)
+}
+
+function displayresult(data,displayresultPassive){
+    console.log("the sum here is equals " + data)
+    displayresultPassive(data)
+
+}
+
+function displayresultPassive(data){
+    console.log("here i am displaying the passive data "+data)
+}
+
+sum(2,3,displayresult)
+// displayresult(sum(2,3,displayresult),displayresultPassive)
+
+// set timeout function
+
+function display(a){
+   return console.log("hello world"+a)
+}
+
+display(2)
+function display1(a){
+    console.log("hello world" +a)
+}
+
+display1(a)
+
+setTimeout(display,3*1000)
