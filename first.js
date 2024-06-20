@@ -1,3 +1,6 @@
+// week 1.2 fundametals codes related to javascript
+
+
 console.log("hello world")
 
 var a = 1; // here i am declaring a variable a and assigning a value 1 to it 
