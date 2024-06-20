@@ -1,2 +1,2 @@
 # js
-ill be uploading my JS practice everyday
+# Will be uploading my JS practice everyday
