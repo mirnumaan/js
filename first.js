@@ -29,3 +29,12 @@ if (ismarried){
 
 //  end if solution
 
+// for loop concept
+const ans = 0
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+    ans = ans + i
+
+}
+
+console.log(ans)
